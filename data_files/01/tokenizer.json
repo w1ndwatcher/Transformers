@@ -1,0 +1,1404 @@
+{
+  "version": "1.0",
+  "truncation": null,
+  "padding": null,
+  "added_tokens": [
+    {
+      "id": 0,
+      "content": "[UNK]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 1,
+      "content": "[CLS]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 2,
+      "content": "[SEP]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 3,
+      "content": "[PAD]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    },
+    {
+      "id": 4,
+      "content": "[MASK]",
+      "single_word": false,
+      "lstrip": false,
+      "rstrip": false,
+      "normalized": false,
+      "special": true
+    }
+  ],
+  "normalizer": null,
+  "pre_tokenizer": {
+    "type": "Whitespace"
+  },
+  "post_processor": null,
+  "decoder": null,
+  "model": {
+    "type": "BPE",
+    "dropout": null,
+    "unk_token": null,
+    "continuing_subword_prefix": null,
+    "end_of_word_suffix": null,
+    "fuse_unk": false,
+    "byte_fallback": false,
+    "ignore_merges": false,
+    "vocab": {
+      "[UNK]": 0,
+      "[CLS]": 1,
+      "[SEP]": 2,
+      "[PAD]": 3,
+      "[MASK]": 4,
+      ",": 5,
+      ".": 6,
+      "/": 7,
+      "0": 8,
+      "1": 9,
+      "2": 10,
+      "4": 11,
+      "5": 12,
+      "6": 13,
+      "7": 14,
+      "8": 15,
+      "9": 16,
+      ":": 17,
+      "A": 18,
+      "B": 19,
+      "C": 20,
+      "D": 21,
+      "H": 22,
+      "I": 23,
+      "M": 24,
+      "P": 25,
+      "S": 26,
+      "T": 27,
+      "a": 28,
+      "b": 29,
+      "c": 30,
+      "d": 31,
+      "e": 32,
+      "f": 33,
+      "g": 34,
+      "h": 35,
+      "i": 36,
+      "k": 37,
+      "l": 38,
+      "m": 39,
+      "n": 40,
+      "o": 41,
+      "p": 42,
+      "r": 43,
+      "s": 44,
+      "t": 45,
+      "u": 46,
+      "v": 47,
+      "w": 48,
+      "x": 49,
+      "y": 50,
+      "z": 51,
+      "in": 52,
+      "re": 53,
+      "er": 54,
+      "da": 55,
+      "ed": 56,
+      "fo": 57,
+      "mg": 58,
+      "0mg": 59,
+      "ce": 60,
+      "it": 61,
+      "lo": 62,
+      "om": 63,
+      "on": 64,
+      "rea": 65,
+      "al": 66,
+      "an": 67,
+      "be": 68,
+      "cr": 69,
+      "en": 70,
+      "ev": 71,
+      "il": 72,
+      "is": 73,
+      "od": 74,
+      "os": 75,
+      "ing": 76,
+      "res": 77,
+      "for": 78,
+      "and": 79,
+      "00mg": 80,
+      "50mg": 81,
+      "Am": 82,
+      "Di": 83,
+      "Me": 84,
+      "Pa": 85,
+      "Pres": 86,
+      "af": 87,
+      "am": 88,
+      "as": 89,
+      "ain": 90,
+      "di": 91,
+      "ea": 92,
+      "es": 93,
+      "ho": 94,
+      "ib": 95,
+      "ic": 96,
+      "ice": 97,
+      "le": 98,
+      "lu": 99,
+      "min": 100,
+      "of": 101,
+      "pl": 102,
+      "rs": 103,
+      "tw": 104,
+      "ter": 105,
+      "us": 106,
+      "urs": 107,
+      "ery": 108,
+      "day": 109,
+      "dail": 110,
+      "lood": 111,
+      "ent": 112,
+      "every": 113,
+      "Dia": 114,
+      "Prescr": 115,
+      "hours": 116,
+      "twice": 117,
+      "daily": 118,
+      "15": 119,
+      "250mg": 120,
+      "400mg": 121,
+      "5mg": 122,
+      "500mg": 123,
+      "850mg": 124,
+      "95": 125,
+      "Ad": 126,
+      "Ap": 127,
+      "Blood": 128,
+      "Clo": 129,
+      "Hg": 130,
+      "Ib": 131,
+      "Mon": 132,
+      "Pos": 133,
+      "St": 134,
+      "Sy": 135,
+      "Ty": 136,
+      "ab": 137,
+      "ar": 138,
+      "az": 139,
+      "ace": 140,
+      "area": 141,
+      "aus": 142,
+      "brea": 143,
+      "blood": 144,
+      "ch": 145,
+      "ct": 146,
+      "com": 147,
+      "crea": 148,
+      "cos": 149,
+      "clu": 150,
+      "de": 151,
+      "din": 152,
+      "dom": 153,
+      "ding": 154,
+      "ef": 155,
+      "el": 156,
+      "eed": 157,
+      "eal": 158,
+      "ect": 159,
+      "fas": 160,
+      "fect": 161,
+      "gn": 162,
+      "glu": 163,
+      "hea": 164,
+      "im": 165,
+      "ibe": 166,
+      "ient": 167,
+      "ief": 168,
+      "kfas": 169,
+      "ll": 170,
+      "lin": 171,
+      "lev": 172,
+      "lief": 173,
+      "mm": 174,
+      "mp": 175,
+      "meal": 176,
+      "ner": 177,
+      "naus": 178,
+      "need": 179,
+      "ol": 180,
+      "op": 181,
+      "or": 182,
+      "ox": 183,
+      "ois": 184,
+      "ole": 185,
+      "pe": 186,
+      "pr": 187,
+      "ps": 188,
+      "pin": 189,
+      "per": 190,
+      "pres": 191,
+      "pain": 192,
+      "pois": 193,
+      "race": 194,
+      "rim": 195,
+      "su": 196,
+      "sis": 197,
+      "sib": 198,
+      "tom": 199,
+      "tfor": 200,
+      "tam": 201,
+      "tes": 202,
+      "tent": 203,
+      "tient": 204,
+      "top": 205,
+      "trim": 206,
+      "upr": 207,
+      "vom": 208,
+      "wit": 209,
+      "zz": 210,
+      "inal": 211,
+      "ines": 212,
+      "inclu": 213,
+      "relief": 214,
+      "dach": 215,
+      "fore": 216,
+      "food": 217,
+      "iting": 218,
+      "itus": 219,
+      "itor": 220,
+      "lodi": 221,
+      "once": 222,
+      "oning": 223,
+      "reading": 224,
+      "betes": 225,
+      "before": 226,
+      "cram": 227,
+      "illin": 228,
+      "ister": 229,
+      "osed": 230,
+      "Amox": 231,
+      "Amlodi": 232,
+      "Mell": 233,
+      "Metfor": 234,
+      "Parace": 235,
+      "Patient": 236,
+      "after": 237,
+      "affect": 238,
+      "ains": 239,
+      "dizz": 240,
+      "ibed": 241,
+      "ical": 242,
+      "icillin": 243,
+      "minister": 244,
+      "ofen": 245,
+      "ply": 246,
+      "plains": 247,
+      "days": 248,
+      "Diagn": 249,
+      "Diabetes": 250,
+      "Prescribe": 251,
+      "Prescribed": 252,
+      "150": 253,
+      "Administer": 254,
+      "Apply": 255,
+      "Clotrim": 256,
+      "Ibupr": 257,
+      "Monitor": 258,
+      "Possib": 259,
+      "Star": 260,
+      "Symp": 261,
+      "Type": 262,
+      "abdom": 263,
+      "azole": 264,
+      "breakfas": 265,
+      "complains": 266,
+      "cream": 267,
+      "cose": 268,
+      "dinner": 269,
+      "els": 270,
+      "glucose": 271,
+      "headach": 272,
+      "levels": 273,
+      "mmHg": 274,
+      "meals": 275,
+      "nausea": 276,
+      "needed": 277,
+      "pine": 278,
+      "persis": 279,
+      "pressu": 280,
+      "poisoning": 281,
+      "toms": 282,
+      "tamol": 283,
+      "topical": 284,
+      "vomiting": 285,
+      "with": 286,
+      "iness": 287,
+      "include": 288,
+      "cramps": 289,
+      "Amoxicillin": 290,
+      "Amlodipine": 291,
+      "Mellitus": 292,
+      "Metformin": 293,
+      "Paracetamol": 294,
+      "affected": 295,
+      "dizziness": 296,
+      "Diagnosed": 297,
+      "Clotrimazole": 298,
+      "Ibuprofen": 299,
+      "Possible": 300,
+      "Start": 301,
+      "Symptoms": 302,
+      "abdominal": 303,
+      "breakfast": 304,
+      "headache": 305,
+      "persistent": 306,
+      "pressure": 307
+    },
+    "merges": [
+      [
+        "i",
+        "n"
+      ],
+      [
+        "r",
+        "e"
+      ],
+      [
+        "e",
+        "r"
+      ],
+      [
+        "d",
+        "a"
+      ],
+      [
+        "e",
+        "d"
+      ],
+      [
+        "f",
+        "o"
+      ],
+      [
+        "m",
+        "g"
+      ],
+      [
+        "0",
+        "mg"
+      ],
+      [
+        "c",
+        "e"
+      ],
+      [
+        "i",
+        "t"
+      ],
+      [
+        "l",
+        "o"
+      ],
+      [
+        "o",
+        "m"
+      ],
+      [
+        "o",
+        "n"
+      ],
+      [
+        "re",
+        "a"
+      ],
+      [
+        "a",
+        "l"
+      ],
+      [
+        "a",
+        "n"
+      ],
+      [
+        "b",
+        "e"
+      ],
+      [
+        "c",
+        "r"
+      ],
+      [
+        "e",
+        "n"
+      ],
+      [
+        "e",
+        "v"
+      ],
+      [
+        "i",
+        "l"
+      ],
+      [
+        "i",
+        "s"
+      ],
+      [
+        "o",
+        "d"
+      ],
+      [
+        "o",
+        "s"
+      ],
+      [
+        "in",
+        "g"
+      ],
+      [
+        "re",
+        "s"
+      ],
+      [
+        "fo",
+        "r"
+      ],
+      [
+        "an",
+        "d"
+      ],
+      [
+        "0",
+        "0mg"
+      ],
+      [
+        "5",
+        "0mg"
+      ],
+      [
+        "A",
+        "m"
+      ],
+      [
+        "D",
+        "i"
+      ],
+      [
+        "M",
+        "e"
+      ],
+      [
+        "P",
+        "a"
+      ],
+      [
+        "P",
+        "res"
+      ],
+      [
+        "a",
+        "f"
+      ],
+      [
+        "a",
+        "m"
+      ],
+      [
+        "a",
+        "s"
+      ],
+      [
+        "a",
+        "in"
+      ],
+      [
+        "d",
+        "i"
+      ],
+      [
+        "e",
+        "a"
+      ],
+      [
+        "e",
+        "s"
+      ],
+      [
+        "h",
+        "o"
+      ],
+      [
+        "i",
+        "b"
+      ],
+      [
+        "i",
+        "c"
+      ],
+      [
+        "i",
+        "ce"
+      ],
+      [
+        "l",
+        "e"
+      ],
+      [
+        "l",
+        "u"
+      ],
+      [
+        "m",
+        "in"
+      ],
+      [
+        "o",
+        "f"
+      ],
+      [
+        "p",
+        "l"
+      ],
+      [
+        "r",
+        "s"
+      ],
+      [
+        "t",
+        "w"
+      ],
+      [
+        "t",
+        "er"
+      ],
+      [
+        "u",
+        "s"
+      ],
+      [
+        "u",
+        "rs"
+      ],
+      [
+        "er",
+        "y"
+      ],
+      [
+        "da",
+        "y"
+      ],
+      [
+        "da",
+        "il"
+      ],
+      [
+        "lo",
+        "od"
+      ],
+      [
+        "en",
+        "t"
+      ],
+      [
+        "ev",
+        "ery"
+      ],
+      [
+        "Di",
+        "a"
+      ],
+      [
+        "Pres",
+        "cr"
+      ],
+      [
+        "ho",
+        "urs"
+      ],
+      [
+        "tw",
+        "ice"
+      ],
+      [
+        "dail",
+        "y"
+      ],
+      [
+        "1",
+        "5"
+      ],
+      [
+        "2",
+        "50mg"
+      ],
+      [
+        "4",
+        "00mg"
+      ],
+      [
+        "5",
+        "mg"
+      ],
+      [
+        "5",
+        "00mg"
+      ],
+      [
+        "8",
+        "50mg"
+      ],
+      [
+        "9",
+        "5"
+      ],
+      [
+        "A",
+        "d"
+      ],
+      [
+        "A",
+        "p"
+      ],
+      [
+        "B",
+        "lood"
+      ],
+      [
+        "C",
+        "lo"
+      ],
+      [
+        "H",
+        "g"
+      ],
+      [
+        "I",
+        "b"
+      ],
+      [
+        "M",
+        "on"
+      ],
+      [
+        "P",
+        "os"
+      ],
+      [
+        "S",
+        "t"
+      ],
+      [
+        "S",
+        "y"
+      ],
+      [
+        "T",
+        "y"
+      ],
+      [
+        "a",
+        "b"
+      ],
+      [
+        "a",
+        "r"
+      ],
+      [
+        "a",
+        "z"
+      ],
+      [
+        "a",
+        "ce"
+      ],
+      [
+        "a",
+        "rea"
+      ],
+      [
+        "a",
+        "us"
+      ],
+      [
+        "b",
+        "rea"
+      ],
+      [
+        "b",
+        "lood"
+      ],
+      [
+        "c",
+        "h"
+      ],
+      [
+        "c",
+        "t"
+      ],
+      [
+        "c",
+        "om"
+      ],
+      [
+        "c",
+        "rea"
+      ],
+      [
+        "c",
+        "os"
+      ],
+      [
+        "c",
+        "lu"
+      ],
+      [
+        "d",
+        "e"
+      ],
+      [
+        "d",
+        "in"
+      ],
+      [
+        "d",
+        "om"
+      ],
+      [
+        "d",
+        "ing"
+      ],
+      [
+        "e",
+        "f"
+      ],
+      [
+        "e",
+        "l"
+      ],
+      [
+        "e",
+        "ed"
+      ],
+      [
+        "e",
+        "al"
+      ],
+      [
+        "e",
+        "ct"
+      ],
+      [
+        "f",
+        "as"
+      ],
+      [
+        "f",
+        "ect"
+      ],
+      [
+        "g",
+        "n"
+      ],
+      [
+        "g",
+        "lu"
+      ],
+      [
+        "h",
+        "ea"
+      ],
+      [
+        "i",
+        "m"
+      ],
+      [
+        "i",
+        "be"
+      ],
+      [
+        "i",
+        "ent"
+      ],
+      [
+        "i",
+        "ef"
+      ],
+      [
+        "k",
+        "fas"
+      ],
+      [
+        "l",
+        "l"
+      ],
+      [
+        "l",
+        "in"
+      ],
+      [
+        "l",
+        "ev"
+      ],
+      [
+        "l",
+        "ief"
+      ],
+      [
+        "m",
+        "m"
+      ],
+      [
+        "m",
+        "p"
+      ],
+      [
+        "m",
+        "eal"
+      ],
+      [
+        "n",
+        "er"
+      ],
+      [
+        "n",
+        "aus"
+      ],
+      [
+        "n",
+        "eed"
+      ],
+      [
+        "o",
+        "l"
+      ],
+      [
+        "o",
+        "p"
+      ],
+      [
+        "o",
+        "r"
+      ],
+      [
+        "o",
+        "x"
+      ],
+      [
+        "o",
+        "is"
+      ],
+      [
+        "o",
+        "le"
+      ],
+      [
+        "p",
+        "e"
+      ],
+      [
+        "p",
+        "r"
+      ],
+      [
+        "p",
+        "s"
+      ],
+      [
+        "p",
+        "in"
+      ],
+      [
+        "p",
+        "er"
+      ],
+      [
+        "p",
+        "res"
+      ],
+      [
+        "p",
+        "ain"
+      ],
+      [
+        "p",
+        "ois"
+      ],
+      [
+        "r",
+        "ace"
+      ],
+      [
+        "r",
+        "im"
+      ],
+      [
+        "s",
+        "u"
+      ],
+      [
+        "s",
+        "is"
+      ],
+      [
+        "s",
+        "ib"
+      ],
+      [
+        "t",
+        "om"
+      ],
+      [
+        "t",
+        "for"
+      ],
+      [
+        "t",
+        "am"
+      ],
+      [
+        "t",
+        "es"
+      ],
+      [
+        "t",
+        "ent"
+      ],
+      [
+        "t",
+        "ient"
+      ],
+      [
+        "t",
+        "op"
+      ],
+      [
+        "t",
+        "rim"
+      ],
+      [
+        "u",
+        "pr"
+      ],
+      [
+        "v",
+        "om"
+      ],
+      [
+        "w",
+        "it"
+      ],
+      [
+        "z",
+        "z"
+      ],
+      [
+        "in",
+        "al"
+      ],
+      [
+        "in",
+        "es"
+      ],
+      [
+        "in",
+        "clu"
+      ],
+      [
+        "re",
+        "lief"
+      ],
+      [
+        "da",
+        "ch"
+      ],
+      [
+        "fo",
+        "re"
+      ],
+      [
+        "fo",
+        "od"
+      ],
+      [
+        "it",
+        "ing"
+      ],
+      [
+        "it",
+        "us"
+      ],
+      [
+        "it",
+        "or"
+      ],
+      [
+        "lo",
+        "di"
+      ],
+      [
+        "on",
+        "ce"
+      ],
+      [
+        "on",
+        "ing"
+      ],
+      [
+        "rea",
+        "ding"
+      ],
+      [
+        "be",
+        "tes"
+      ],
+      [
+        "be",
+        "fore"
+      ],
+      [
+        "cr",
+        "am"
+      ],
+      [
+        "il",
+        "lin"
+      ],
+      [
+        "is",
+        "ter"
+      ],
+      [
+        "os",
+        "ed"
+      ],
+      [
+        "Am",
+        "ox"
+      ],
+      [
+        "Am",
+        "lodi"
+      ],
+      [
+        "Me",
+        "ll"
+      ],
+      [
+        "Me",
+        "tfor"
+      ],
+      [
+        "Pa",
+        "race"
+      ],
+      [
+        "Pa",
+        "tient"
+      ],
+      [
+        "af",
+        "ter"
+      ],
+      [
+        "af",
+        "fect"
+      ],
+      [
+        "ain",
+        "s"
+      ],
+      [
+        "di",
+        "zz"
+      ],
+      [
+        "ib",
+        "ed"
+      ],
+      [
+        "ic",
+        "al"
+      ],
+      [
+        "ic",
+        "illin"
+      ],
+      [
+        "min",
+        "ister"
+      ],
+      [
+        "of",
+        "en"
+      ],
+      [
+        "pl",
+        "y"
+      ],
+      [
+        "pl",
+        "ains"
+      ],
+      [
+        "day",
+        "s"
+      ],
+      [
+        "Dia",
+        "gn"
+      ],
+      [
+        "Dia",
+        "betes"
+      ],
+      [
+        "Prescr",
+        "ibe"
+      ],
+      [
+        "Prescr",
+        "ibed"
+      ],
+      [
+        "15",
+        "0"
+      ],
+      [
+        "Ad",
+        "minister"
+      ],
+      [
+        "Ap",
+        "ply"
+      ],
+      [
+        "Clo",
+        "trim"
+      ],
+      [
+        "Ib",
+        "upr"
+      ],
+      [
+        "Mon",
+        "itor"
+      ],
+      [
+        "Pos",
+        "sib"
+      ],
+      [
+        "St",
+        "ar"
+      ],
+      [
+        "Sy",
+        "mp"
+      ],
+      [
+        "Ty",
+        "pe"
+      ],
+      [
+        "ab",
+        "dom"
+      ],
+      [
+        "az",
+        "ole"
+      ],
+      [
+        "brea",
+        "kfas"
+      ],
+      [
+        "com",
+        "plains"
+      ],
+      [
+        "crea",
+        "m"
+      ],
+      [
+        "cos",
+        "e"
+      ],
+      [
+        "din",
+        "ner"
+      ],
+      [
+        "el",
+        "s"
+      ],
+      [
+        "glu",
+        "cose"
+      ],
+      [
+        "hea",
+        "dach"
+      ],
+      [
+        "lev",
+        "els"
+      ],
+      [
+        "mm",
+        "Hg"
+      ],
+      [
+        "meal",
+        "s"
+      ],
+      [
+        "naus",
+        "ea"
+      ],
+      [
+        "need",
+        "ed"
+      ],
+      [
+        "pin",
+        "e"
+      ],
+      [
+        "per",
+        "sis"
+      ],
+      [
+        "pres",
+        "su"
+      ],
+      [
+        "pois",
+        "oning"
+      ],
+      [
+        "tom",
+        "s"
+      ],
+      [
+        "tam",
+        "ol"
+      ],
+      [
+        "top",
+        "ical"
+      ],
+      [
+        "vom",
+        "iting"
+      ],
+      [
+        "wit",
+        "h"
+      ],
+      [
+        "ines",
+        "s"
+      ],
+      [
+        "inclu",
+        "de"
+      ],
+      [
+        "cram",
+        "ps"
+      ],
+      [
+        "Amox",
+        "icillin"
+      ],
+      [
+        "Amlodi",
+        "pine"
+      ],
+      [
+        "Mell",
+        "itus"
+      ],
+      [
+        "Metfor",
+        "min"
+      ],
+      [
+        "Parace",
+        "tamol"
+      ],
+      [
+        "affect",
+        "ed"
+      ],
+      [
+        "dizz",
+        "iness"
+      ],
+      [
+        "Diagn",
+        "osed"
+      ],
+      [
+        "Clotrim",
+        "azole"
+      ],
+      [
+        "Ibupr",
+        "ofen"
+      ],
+      [
+        "Possib",
+        "le"
+      ],
+      [
+        "Star",
+        "t"
+      ],
+      [
+        "Symp",
+        "toms"
+      ],
+      [
+        "abdom",
+        "inal"
+      ],
+      [
+        "breakfas",
+        "t"
+      ],
+      [
+        "headach",
+        "e"
+      ],
+      [
+        "persis",
+        "tent"
+      ],
+      [
+        "pressu",
+        "re"
+      ]
+    ]
+  }
+}
