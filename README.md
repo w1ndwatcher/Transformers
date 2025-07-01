@@ -1,4 +1,4 @@
-# 🧠 NLP & RAG Essentials with LangChain, FAISS, and HuggingFace
+# NLP & RAG Essentials with LangChain, FAISS, and HuggingFace
 
 This repository contains a hands-on learning journey through key concepts in **Natural Language Processing (NLP)**, **custom tokenization**, **embeddings**, **vector databases**, and **LangChain** components, culminating in a **RAG-based PDF Question Answering chatbot project**.
 
@@ -8,7 +8,7 @@ This repository contains a hands-on learning journey through key concepts in **N
 
 | Notebook | Description |
 |----------|-------------|
-| `01_Creating_a_custom_tokenizer.ipynb` | Create a custom tokenizer using HuggingFace Tokenizers. Introduces basic tokenization concepts. |
+| `01_Creating_a_custom_tokenizer.ipynb` | Create a custom tokenizer using BPE and pre-trained tokenizer using HuggingFace Tokenizers. Introduces basic tokenization concepts. |
 | `02_Embeddings.ipynb` | Generate text embeddings using the `instructor-xl` model from HuggingFace. |
 | `03_FAISS_Indexing.ipynb` | Store and retrieve embeddings using **FAISS** (Facebook AI Similarity Search). |
 | `04_LangChain_Essentials.ipynb` | Explore LangChain components through an interactive **tour guide assistant** example. Covers:  
@@ -30,7 +30,6 @@ This repository contains a hands-on learning journey through key concepts in **N
 - **LangChain** – Modular chains, memory, prompts, tools, and agents
 - **Retrieval-Augmented Generation (RAG)** – For building context-aware chatbots
 - **OpenAI/Groq APIs** – LLM-based responses
-- **Flask (in project extension)** – Backend integration (notebooks only here)
 
 ---
 
@@ -46,18 +45,8 @@ This repository contains a hands-on learning journey through key concepts in **N
 
 ## 📌 Getting Started
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
-   ```
-
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Run the notebooks using Jupyter/Colab.
+1. Setup secret keys for Hugging Face and Groq/OpenAI and save them in a .env file.
+2. Run the notebooks using Jupyter/Colab.
 
 ---
 
