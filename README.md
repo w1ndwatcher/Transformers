@@ -11,13 +11,7 @@ This repository contains a hands-on learning journey through key concepts in **N
 | `01_Creating_a_custom_tokenizer.ipynb` | Create a custom tokenizer using BPE and pre-trained tokenizer using HuggingFace Tokenizers. Introduces basic tokenization concepts. |
 | `02_Embeddings.ipynb` | Generate text embeddings using the `instructor-xl` model from HuggingFace. |
 | `03_FAISS_Indexing.ipynb` | Store and retrieve embeddings using **FAISS** (Facebook AI Similarity Search). |
-| `04_LangChain_Essentials.ipynb` | Explore LangChain components through an interactive **tour guide assistant** example. Covers:  
-   - **Models** (OpenAI/Groq)  
-   - **Prompts** (PromptTemplate)  
-   - **Memory** (ChatBufferMemory)  
-   - **Vector Stores** (FAISS)  
-   - **Chains** (Activity + Tips)  
-   - **Agents** |
+| `04_LangChain_Essentials.ipynb` | Explore LangChain components through an interactive **tour guide assistant** example. Covers: **Models** (OpenAI/Groq), **Prompts** (PromptTemplate), **Memory** (ChatBufferMemory), **Vector Stores** (FAISS), **Chains** (Activity + Tips), **Agents** |
 | `05_Chat_with_PDFs_Project.ipynb` | Final RAG project where users can upload PDFs and chat with the content using a **retrieval-augmented generation pipeline**. |
 
 ---
